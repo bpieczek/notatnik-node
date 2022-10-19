@@ -1,0 +1,42 @@
+.new-note {
+    background-color: hsl(219, 60%, 50%);
+    font-size: 1.25rem;
+    padding: .4em 1.55em;
+    border-radius: 8px;
+    color: white;
+}
+.new-note:hover {
+    background-color: hsl(219, 60%, 45%);
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.note button.dodaj {
+    margin-top: 1rem;
+    max-width: 40%;
+    margin-inline: auto;
+}
+
+.note label div{
+    color: #e7e7e7;
+    width: fit-content;
+    transform: translateY(1.9em) translateX(.4em) scale(1.3);
+    transition: transform 150ms ease-in;
+}
+.note label:focus-within div,
+.note div:has( +input:not(:placeholder-shown)){
+    transform: translate(0) scale(1);
+}
+.note input {
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: .25em solid white;
+    color: #e2e2e2;
+    width: 100%;
+
+    outline: none;
+}

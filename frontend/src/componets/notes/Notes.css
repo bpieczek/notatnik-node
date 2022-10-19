@@ -1,0 +1,66 @@
+.note{
+    background: hsl(219, 30%, 20%);
+    border-radius: 6px;
+    padding: .85rem 2rem;
+    text-align: left;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.description{
+    display: block;
+    color: #fff;
+    font-style: italic;
+    margin-block: .7em;
+    overflow: hidden;
+}
+
+.note p{
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 1.15rem;
+}
+
+.note button{
+    /* margin: 2px; */
+    background: rgb(129, 70, 240);
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: .5em 1.35em;
+    cursor: pointer;
+}
+
+.note button:hover{
+    background: rgb(129, 70, 200);
+}
+
+.note button.delete{
+    background: rgb(238, 67, 55);
+}
+
+.note button.delete:hover{
+    background: rgb(223, 57, 45);
+}
+
+.note .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+    display: none;
+}
+.note:has(.description) .controls {
+    display: flex;
+}
+
+
+h1 {
+    padding: .25em;
+}
+
+.note-note:not(:has(.description)) {
+    max-height: 100px;
+}

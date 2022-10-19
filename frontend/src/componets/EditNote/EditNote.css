@@ -1,0 +1,19 @@
+.modal {
+    min-width: min(600px, 98vw);
+}
+.modal button {
+    background-color: #3eab42;
+}
+.modal button:hover {
+    background-color: hsl(122, 47%, 42%);
+}
+.edit {
+    display: grid;
+    grid-auto-flow: row;
+    gap: .5em;
+}
+
+.ReactModal__Overlay {
+    display: grid;
+    place-items: center;
+}
