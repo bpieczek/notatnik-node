@@ -1,8 +1,14 @@
-const mongoose = require('mongoose');
-const {database} = require('../config');
+const mongoose = require("mongoose");
+const { database } = require("../config");
 
-mongoose.connect(database, {
-    useNewUrlParser: true, // Pozwala na parsowanie urla
-    useUnifiedTopology: true // Pozwala na monitorowanie zachowań - nieistotne
-});
-
+mongoose
+  .connect(database, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Database connected succesfully!");
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
