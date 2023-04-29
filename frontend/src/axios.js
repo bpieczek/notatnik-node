@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://api-notes-5azq.onrender.com",
+  baseURL: process.env.API_URL || "https://api-notes-5azq.onrender.com/api",
 });
 
 export default instance;
