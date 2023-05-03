@@ -1,5 +1,7 @@
 # This app serves as a notepad. Page preview is available [here](https://notes-frontend-d1tm.onrender.com).
 
+If something doesn't load, sorry, free hosting is quite slow
+
 ## Technologies used:
 
 ![node](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
